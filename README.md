@@ -46,7 +46,9 @@ Variables:
 
 ### Next Steps
 
-#### Data Cleaning using Excel and R
+1. Workplan
+2. Data Cleaning Documentation
+
 
 ### License Details
 This is an open database intended for public use. [Open Database License(ODbL)](https://opendatacommons.org/licenses/odbl/1.0/)  
