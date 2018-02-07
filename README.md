@@ -54,4 +54,4 @@ Variables:
 This is an open database intended for public use. [Open Database License(ODbL)](https://opendatacommons.org/licenses/odbl/1.0/)  
 
 ### Reference
-> 500 Cities: Local Data for Better Health. (2016, December 07). Retrieved September 18, 2017, from https://catalog.data.gov/dataset/500-cities-local-data-for-better-health-b32fd
+> 500 Cities: Local Data for Better Health. (2016, December 07). Retrieved February 6, 2018 from https://catalog.data.gov/dataset/500-cities-local-data-for-better-health-b32fd
