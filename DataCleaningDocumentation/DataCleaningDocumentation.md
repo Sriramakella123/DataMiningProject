@@ -13,11 +13,11 @@ Assuming the data with respect to 2013 and 2014 the parameters are hence analyze
 
 ## Steps for Data Remediation
 
-1.I am working on the  data research questions and goals clear and do not tend to chose the Census Data for tracting the Census values, instead I have limited data with respect to years 2013,2014  and also eliminated the FIPS value.
+1. I am working on the  data research questions and goals clear and do not tend to chose the Census Data for tracting the Census values, instead I have limited data with respect to years 2013,2014  and also eliminated the FIPS value.
 
-2.Additionally, I have filled the missing data values for CityName with 'NA' - _Not Applicable_ value and PopulationCount with 'Unknown' as those columns with the blank or unknown datavalue are not considered for any sort of data analysis and doesn't provide much detail or clarity on visualization. Instead, naming them appropriately as NA or Unknown helps in rethinking in data collection ar analysis steps.
+2. Additionally, I have filled the missing data values for CityName with 'NA' - _Not Applicable_ value and PopulationCount with 'Unknown' as those columns with the blank or unknown datavalue are not considered for any sort of data analysis and doesn't provide much detail or clarity on visualization. Instead, naming them appropriately as NA or Unknown helps in rethinking in data collection ar analysis steps.
 
-3.Also I have deleted the irrevelant or unnecessary column and double-checked for data duplicacies and their existence and ensure their validity with respect to the data evaluation. This also involved redefining and understanding the end-goals in the data cleaning thereby I have deleted the unstandardized data.
+3. Also I have deleted the irrevelant or unnecessary column and double-checked for data duplicacies and their existence and ensure their validity with respect to the data evaluation. This also involved redefining and understanding the end-goals in the data cleaning thereby I have deleted the unstandardized data.
 
 ## Step-by-step Description of Data Cleaning Process for Replication
 
