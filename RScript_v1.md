@@ -20,48 +20,48 @@
 
 #Make the column Numeric to carry out aggregation functions
 **categoryDistribution$Data_Value_in_percentage <- as.numeric(categoryDistribution$Data_Value_in_percentage)
-categoryDistribution$PopulationCount <- as.numeric(categoryDistribution$PopulationCount)**
+  categoryDistribution$PopulationCount <- as.numeric(categoryDistribution$PopulationCount)**
 
 #Calculate the Actual Population Count Value from the Data Value Column and Population Column
 **categoryDistribution$ActualPopulation <- (categoryDistribution$Data_Value_in_percentage*categoryDistribution$PopulationCount*0.01)**
 
 #Insert a new Column named Region and categorize states into different Regions ("South", "West", "Midwest", "Northeast", "USA")
-**categoryDistribution$Region[categoryDistribution$StateDesc %in% c("Connecticut","Maine",
+**1. categoryDistribution$Region[categoryDistribution$StateDesc %in% c("Connecticut","Maine",
                                                                   "Massachusetts", "New Hampshire", 
                                                                   "Rhode Island", "Vermont")] <- "New England"**
 
-**categoryDistribution$Region[categoryDistribution$StateDesc %in% c("New Jersey", "New York", 
+**2. categoryDistribution$Region[categoryDistribution$StateDesc %in% c("New Jersey", "New York", 
                                                                   "Pennsylvania")] <- "Middle Atlantic"**
 
-**categoryDistribution$Region[categoryDistribution$StateDesc %in% c("Illinois", "Indiana", 
+**3. categoryDistribution$Region[categoryDistribution$StateDesc %in% c("Illinois", "Indiana", 
                                                                   "Michigan", "Ohio", 
                                                                   "Wisconsin")] <- "East North Central"**
 
 
-**categoryDistribution$Region[categoryDistribution$StateDesc %in% c("Iowa", 
+**4. categoryDistribution$Region[categoryDistribution$StateDesc %in% c("Iowa", 
                                                                   "Kansas", "Minnesota", 
                                                                   "Missouri", "Nebraska", 
                                                                   "North Dakota", "South Dakota")] <- "West North Central"**
 
-**categoryDistribution$Region[categoryDistribution$StateDesc %in% c("Delaware", "Florida", 
+**5. categoryDistribution$Region[categoryDistribution$StateDesc %in% c("Delaware", "Florida", 
                                                                   "Georgia", "Maryland", 
                                                                   "North Carolina", "South Carolina", 
                                                                   "Virginia", "District of Columbia", 
                                                                   "West Virginia")] <- "South Atlantic"**
 
 
-**categoryDistribution$Region[categoryDistribution$StateDesc %in% c("Alabama", "Kentucky",
+**6. categoryDistribution$Region[categoryDistribution$StateDesc %in% c("Alabama", "Kentucky",
                                                                   "Mississippi", "Tennessee")] <- "East South Central"**
 
-**categoryDistribution$Region[categoryDistribution$StateDesc %in% c("Arkansas", 
+**7. categoryDistribution$Region[categoryDistribution$StateDesc %in% c("Arkansas", 
                                                                   "Louisiana", "Oklahoma", "Texas")] <- "West South Central"**
 
-**categoryDistribution$Region[categoryDistribution$StateDesc %in% c("Arizona", "Colorado", "Idaho", 
+**8. categoryDistribution$Region[categoryDistribution$StateDesc %in% c("Arizona", "Colorado", "Idaho", 
                                                                   "Montana", "Nevada", "New Mexico", 
                                                                   "Utah", "Wyoming")] <- "Mountain"**
 
-**categoryDistribution$Region[categoryDistribution$StateDesc %in% c("Alaska", 
+**9. categoryDistribution$Region[categoryDistribution$StateDesc %in% c("Alaska", 
                                                                   "California", "Hawaii", "Oregon", 
                                                                   "Washington")] <- "Pacific"**
 
-**categoryDistribution$Region[categoryDistribution$StateDesc %in% c("United States")] <- "USA"**
+**10. categoryDistribution$Region[categoryDistribution$StateDesc %in% c("United States")] <- "USA"**
