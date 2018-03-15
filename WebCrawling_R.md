@@ -1,4 +1,4 @@
-# An R web crawler and scraper 
+## An R web crawler and scraper 
 [![CRAN version](http://www.r-pkg.org/badges/version/Rcrawler)](https://CRAN.R-project.org/package=Rcrawler)
 [![Build Test](https://api.travis-ci.org/salimk/Rcrawler.svg?branch=master)](https://travis-ci.org/salimk/Rcrawler)
 ![Downloads Stats](http://cranlogs.r-pkg.org/badges/Rcrawler)
