@@ -202,3 +202,30 @@ ggscatter(mergedHealthOutcome_Prevention, x = "Population_Health_Outcomes",
           y = "Population_Prevention_Category", add = "reg.line", 
           conf.int = TRUE, cor.coef = TRUE, cor.method = "pearson", 
           xlab = "Regional Health Outcome", ylab = "Regional Prevention")
+          
+##### Removed unwanted state rowname with the value "USA"
+mergedHealthOutcome_Prevention <- mergedHealthOutcome_Prevention[-8,]
+
+#Create 3 temporary data frames for creating an R Plot
+a <- data.frame(mergedHealthOutcome_Prevention$Region)
+b <- data.frame(mergedHealthOutcome_Prevention$Population_Health_Outcomes)
+c <- data.frame(mergedHealthOutcome_Prevention$Population_Prevention_Category)
+
+##### Merge all the data frames into one
+df <- data.frame(a,b,c)
+
+##### Filter the data frame values based on Region
+df <- melt(df, id.vars = "mergedHealthOutcome_Prevention.Region")
+
+##### Create an R plot using ggplot library
+ggplot(df, aes(x=reorder(mergedHealthOutcome_Prevention.Region, value), 
+               y=value/1000000, fill=variable)) + 
+  geom_bar(stat = "identity") + 
+  scale_fill_manual(values = c("#303B41", "#00B2B9"), 
+                    labels= c("Health Outcome", "Prevention Category")) +
+  xlab("Regions") + 
+  ylab("Population Affected (in Millions)") + 
+  ggtitle("Box Plot of Population Affected and Regions in the USA") +
+  theme(plot.title = element_text(hjust = 0.5)) + 
+  scale_x_discrete(labels = function(x) str_wrap(x, width=5)) +
+  labs(fill="Measurement Category")
