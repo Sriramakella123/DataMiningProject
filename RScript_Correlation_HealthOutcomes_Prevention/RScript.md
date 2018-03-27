@@ -203,7 +203,7 @@ ggscatter(mergedHealthOutcome_Prevention, x = "Population_Health_Outcomes",
           conf.int = TRUE, cor.coef = TRUE, cor.method = "pearson", 
           xlab = "Regional Health Outcome", ylab = "Regional Prevention")
           
-##### Removed unwanted state rowname with the value "USA"
+#### Removed unwanted state rowname with the value "USA"
 mergedHealthOutcome_Prevention <- mergedHealthOutcome_Prevention[-8,]
 
 #Create 3 temporary data frames for creating an R Plot
@@ -211,13 +211,13 @@ a <- data.frame(mergedHealthOutcome_Prevention$Region)
 b <- data.frame(mergedHealthOutcome_Prevention$Population_Health_Outcomes)
 c <- data.frame(mergedHealthOutcome_Prevention$Population_Prevention_Category)
 
-##### Merge all the data frames into one
+#### Merge all the data frames into one
 df <- data.frame(a,b,c)
 
-##### Filter the data frame values based on Region
+#### Filter the data frame values based on Region
 df <- melt(df, id.vars = "mergedHealthOutcome_Prevention.Region")
 
-##### Create an R plot using ggplot library
+#### Create an R plot using ggplot library
 ggplot(df, aes(x=reorder(mergedHealthOutcome_Prevention.Region, value), 
                y=value/1000000, fill=variable)) + 
   geom_bar(stat = "identity") + 
