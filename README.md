@@ -44,9 +44,16 @@ Variables:
 
     
 
-### Next Steps
+### Steps of Data Mining included
 
-1. Data Cleaning Documentation - RScriptv2
+1. Data Understanding
+2. Data Cleaning - R Scripts
+3. Data Analysis - SQL, Correlation Analysis 
+4. Web Crawling for Retrieving content for Data Mining - R Crawler
+5. Data Mining using Clustering, Classification, Linear Regression - WEKA
+6. Data Visualization - R Plots
+7. Documentation 
+
 
 
 ### License Details
@@ -54,3 +61,5 @@ This is an open database intended for public use. [Open Database License(ODbL)](
 
 ### Reference
 > 500 Cities: Local Data for Better Health. (2016, December 07). Retrieved February 6, 2018 from https://catalog.data.gov/dataset/500-cities-local-data-for-better-health-b32fd
+
+> R Crawler, Salim. K: Retrieved March 25th, 2018 from https://github.com/salimk/Rcrawler/blob/master/README.md
